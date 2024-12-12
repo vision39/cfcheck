@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeforces Problem Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Codeforces Problem Checker</h1>
+    <form id="uploadForm">
+      <label for="file">Upload Excel File:</label>
+      <input type="file" id="file" accept=".xlsx, .xls" required />
+      
+      <label for="problem">Enter Problem Code (e.g., 158A):</label>
+      <input type="text" id="problem" required />
+      
+      <button type="submit">Check</button>
+    </form>
+    <div id="results"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
